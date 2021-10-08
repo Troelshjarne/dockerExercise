@@ -8,7 +8,6 @@ import (
 	t "time"
 
 	"github.com/Troelshjarne/dockerExercise/time"
-
 	"google.golang.org/grpc"
 )
 
