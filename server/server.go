@@ -21,8 +21,13 @@ func (s *Server) GetTime(ctx context.Context, in *time.GetTimeRequest) (*time.Ge
 }
 
 func main() {
+
 	// Create listener tcp on port 9080
 	list, err := net.Listen("tcp", ":9080")
+	if err == nil {
+		fmt.Print("succes")
+	}
+
 	if err != nil {
 		log.Fatalf("Failed to listen on port 9080: %v", err)
 	}
